@@ -1,0 +1,301 @@
+1.#include <stdio.h>
+
+int main() {
+    int score = 0;
+    char answer;
+
+    printf("===== C PROGRAMMING QUIZ =====\n");
+
+    // Question 1
+    printf("\n1. Which function is used to print output in C?\n");
+    printf("A. input()\n");
+    printf("B. printf()\n");
+    printf("C. print()\n");
+    printf("D. scanf()\n");
+
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'B' || answer == 'b') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer: B. printf()\n");
+    }
+
+    // Question 2
+    printf("\n2. Which symbol is used to end a statement in C?\n");
+    printf("A. .\n");
+    printf("B. :\n");
+    printf("C. ;\n");
+    printf("D. ,\n");
+
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'C' || answer == 'c') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer: C. ;\n");
+    }
+
+    // Question 3
+    printf("\n3. Which data type is used to store an integer?\n");
+    printf("A. float\n");
+    printf("B. char\n");
+    printf("C. int\n");
+    printf("D. double\n");
+
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'C' || answer == 'c') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer: C. int\n");
+    }
+
+    // Question 4
+    printf("\n4. Which operator is used to get the address of a variable?\n");
+    printf("A. *\n");
+    printf("B. &\n");
+    printf("C. #\n");
+    printf("D. @\n");
+
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'B' || answer == 'b') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer: B. &\n");
+    }
+
+    // Question 5
+    printf("\n5. Which loop executes at least once?\n");
+    printf("A. for\n");
+    printf("B. while\n");
+    printf("C. do-while\n");
+    printf("D. if\n");
+
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+
+    if (answer == 'C' || answer == 'c') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer: C. do-while\n");
+    }
+
+    // Final result
+    printf("\n===== RESULT =====\n");
+    printf("Your score: %d/5\n", score);
+
+    if (score == 5)
+        printf("Excellent!\n");
+    else if (score >= 3)
+        printf("Good job!\n");
+    else
+        printf("Keep practicing C!\n");
+
+    return 0;
+}
+2.#include <stdio.h>
+
+int main() {
+    int score = 0;
+    int answer;
+
+    printf("===== C PROGRAMMING QUIZ =====\n");
+
+    // Question 1
+    printf("\n1. What is the output of 10 / 2?\n");
+    printf("1. 2\n");
+    printf("2. 5\n");
+    printf("3. 10\n");
+    printf("4. 20\n");
+
+    printf("Enter your answer: ");
+    scanf("%d", &answer);
+
+    if (answer == 2) {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is 2.\n");
+    }
+
+    // Question 2
+    printf("\n2. Which keyword is used to return a value from a function?\n");
+    printf("1. break\n");
+    printf("2. exit\n");
+    printf("3. return\n");
+    printf("4. continue\n");
+
+    printf("Enter your answer: ");
+    scanf("%d", &answer);
+
+    if (answer == 3) {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is 3.\n");
+    }
+
+    // Question 3
+    printf("\n3. Which symbol is used for a single-line comment?\n");
+    printf("1. //\n");
+    printf("2. /* */\n");
+    printf("3. ##\n");
+    printf("4. --\n");
+
+    printf("Enter your answer: ");
+    scanf("%d", &answer);
+
+    if (answer == 1) {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is 1.\n");
+    }
+
+    // Question 4
+    printf("\n4. Which data type stores a single character?\n");
+    printf("1. int\n");
+    printf("2. char\n");
+    printf("3. float\n");
+    printf("4. double\n");
+
+    printf("Enter your answer: ");
+    scanf("%d", &answer);
+
+    if (answer == 2) {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is 2.\n");
+    }
+
+    // Question 5
+    printf("\n5. What is the index of the first element in a C array?\n");
+    printf("1. 0\n");
+    printf("2. 1\n");
+    printf("3. -1\n");
+    printf("4. 2\n");
+
+    printf("Enter your answer: ");
+    scanf("%d", &answer);
+
+    if (answer == 1) {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Wrong! Correct answer is 1.\n");
+    }
+
+    // Result
+    printf("\n===== FINAL RESULT =====\n");
+    printf("Score = %d/5\n", score);
+
+    if (score == 5) {
+        printf("Excellent!\n");
+    } else if (score >= 3) {
+        printf("Good job!\n");
+    } else {
+        printf("Practice more!\n");
+    }
+
+    return 0;
+}
+3.#include <stdio.h>
+
+int main() {
+    int A, B;
+
+    scanf("%d %d", &A, &B);
+
+    printf("%d\n", A + B);
+
+    return 0;
+}
+4.#include <stdio.h>
+
+int main() {
+    int N;
+
+    scanf("%d", &N);
+
+    if (N % 2 == 0)
+        printf("Even\n");
+    else
+        printf("Odd\n");
+
+    return 0;
+}
+5.#include <stdio.h>
+
+int main() {
+    int A, B, C;
+
+    scanf("%d %d %d", &A, &B, &C);
+
+    if (A >= B && A >= C)
+        printf("%d\n", A);
+    else if (B >= A && B >= C)
+        printf("%d\n", B);
+    else
+        printf("%d\n", C);
+
+    return 0;
+}
+6.#include <stdio.h>
+
+int main() {
+    int N;
+
+    scanf("%d", &N);
+
+    if (N > 0)
+        printf("Positive\n");
+    else if (N < 0)
+        printf("Negative\n");
+    else
+        printf("Zero\n");
+
+    return 0;
+}
+7.#include <stdio.h>
+
+int main() {
+    int N, i, sum = 0;
+
+    scanf("%d", &N);
+
+    for (i = 1; i <= N; i++) {
+        sum = sum + i;
+    }
+
+    printf("%d\n", sum);
+
+    return 0;
+}
+8.#include <stdio.h>
+
+int main() {
+    int N, i;
+    long long factorial = 1;
+
+    scanf("%d", &N);
+
+    for (i = 1; i <= N; i++) {
+        factorial = factorial * i;
+    }
+
+    printf("%lld\n", factorial);
+
+    return 0;
+}
